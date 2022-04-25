@@ -318,6 +318,49 @@
         <svg class="close-btn" data-modal-close>
             <use href="./images/icons.svg#icon-close"></use>
         </svg>
+
+        <p class="header-form">Zostaw swoje dane w formularzu poniżej</p>
+        <form class="modal-form" name="contact-form">
+            <label class="label-form-data">Imię
+                <div class="modal-wrapper">
+                    <input class="modal-input" type="text" name="user-name"/>
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-imie"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="label-form-data">Telefon
+                <div class="modal-wrapper">
+                    <input class="modal-input" type="tel" name="user-phone"/>
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-telefon"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="label-form-data">Email
+                <div class="modal-wrapper">
+                    <input class="modal-input" type="email" name="user-mail"/>
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="label-form-data-comment">Komentarz
+                <textarea class="modal-text" name="user-text" placeholder="Wprowadź tekst"></textarea>
+            </label>
+            <div class="policy">
+            <input class="checkbox" type="checkbox" name="modal-policy" value="accept-policy" id="user-policy" />
+            <!--<label class="privacy-label" for="user-privacy">
+                <svg class="icon-checkbox">
+                    <use href="./images/icons.svg#icon-checkboxx" width="18" height="18"></use>
+                </svg> -->
+                <label class="modal-policy-text" for="user-policy">
+                    Oświadczam, iz akceptuje <a href="#">Regulamin</a> i <a href="#">Politykę prywatności.</a>
+                </label>
+                <button type="submit" class="policy-btn">Wyślij</button>
+            <!--</label> -->
+            </div>
+         </form>
     </div>
 </div>
 <script src="/goit-markup-hw-05/js/modal.js"></script>
